@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+
+<project name="phrozn-example" basedir="." default="phrozn.build">
+    <taskdef name="phrozn" classpath="src" classname="phing.tasks.ext.phrozn.PhroznUpdateTask" />
+
+    <target name="phrozn.build">
+        <phrozn src="test/" dst="test/out" />
+    </target>
+</project>
